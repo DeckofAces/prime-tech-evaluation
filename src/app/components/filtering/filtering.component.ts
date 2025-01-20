@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { IgxPreventDocumentScrollDirective } from '../../directives/prevent-scroll.directive';
 import { DATA } from './../../data/nwindData';
 import { IgxGridComponent } from 'igniteui-angular';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-filtering',
-  imports: [IgxGridModule, FormsModule, IgxPreventDocumentScrollDirective],
+  imports: [IgxGridModule, FormsModule, IgxPreventDocumentScrollDirective, CommonModule],
   templateUrl: './filtering.component.html',
   styleUrl: './filtering.component.scss'
 })
